@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class GameSettingsButtons : MonoBehaviour
@@ -10,6 +11,11 @@ public class GameSettingsButtons : MonoBehaviour
     public void backButtonHandler()
     {
         inGameSettingsMenu.SetActive(false);
+    }
+
+    public void homeButtonHandler()
+    {
+        SceneManager.LoadScene("MainMenuScene");
     }
 
     public void settingsButtonhandler()
