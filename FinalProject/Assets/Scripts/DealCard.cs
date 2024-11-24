@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class DealCard : MonoBehaviour
@@ -9,6 +10,13 @@ public class DealCard : MonoBehaviour
     public GameObject dealBtn;
 
     public AudioSource dealCard;
+
+    private bool facedUp;
+
+    private void Start()
+    {
+        facedUp = false;
+    }
 
     public void dealNewCard()
     {

@@ -15,6 +15,9 @@ public class CardController : MonoBehaviour
     public GameObject[] dealingLeftCards;
     public GameObject[] turningRightCards;
 
+    public GameObject guessCardBack;
+    public GameObject turnCardBack;
+
     public static bool guessHi = false;
     public static bool guessLow = false;
 
@@ -22,7 +25,6 @@ public class CardController : MonoBehaviour
     public AudioSource correctCard;
     public AudioSource incorrectCard;
 
-    //compare cards (equal cards = winner)
     private void Update()
     {
         if (guessHi == true) 
